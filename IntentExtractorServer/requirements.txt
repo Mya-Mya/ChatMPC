@@ -1,0 +1,3 @@
+flask
+sentence_transformers
+sklearn
