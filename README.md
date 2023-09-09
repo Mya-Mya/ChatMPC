@@ -20,4 +20,4 @@ Check that the server is running on `http://127.0.0.1:3838`.
 ### 3. Work in MATLAB
 The code for the numerical experiment is `main.m`. 
 
-Please run it **SECTION BY SECTION** because I'll need you to run the commands yourself in the middle of running.
+Please run it **SECTION BY SECTION** because I'll need you to type/run some commands yourself in the middle of running.
