@@ -59,7 +59,7 @@ D1 = getToObstacleDistancesHistory(environment.obstacles, X1);
 figure; hold on;
 md = MapDrawer;
 md.obstacles(environment);
-md = md.trajectory(X1,Color="red",DisplayName="Trial 1");
+md = md.trajectory(X1,Color="blue",DisplayName="Trial 1");
 md.finish(environment);
 hold off;
 
@@ -99,11 +99,20 @@ D3 = getToObstacleDistancesHistory(environment.obstacles, X3);
 figure; hold on;
 md = MapDrawer;
 md.obstacles(environment);
-md = md.trajectory(X1,Color="red",DisplayName="Trial 1");
-md = md.trajectory(X2,Color="blue",DisplayName="Trial 2");
-md = md.trajectory(X3,Color="green",DisplayName="Trial 3");
+md = md.trajectory(X1,Color="blue",DisplayName="Trial 1");
+md = md.trajectory(X2,Color="red",DisplayName="Trial 2");
+md = md.trajectory(X3,Color="black",DisplayName="Trial 3");
 md.finish(environment);
-hold off;hold off;
+hold off;
+
+%% Draw Trajectory of Trial 3
+figure; hold on;
+md = MapDrawer;
+md.obstacles(environment);
+md = md.trajectory(X3,Color="black",DisplayName="Trial 3");
+md.finish(environment);
+hold off;
+
 %% Draw to-Obstacle Distances
 
 n_obstacles = length(environment.obstacles);
