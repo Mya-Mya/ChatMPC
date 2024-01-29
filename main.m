@@ -71,6 +71,7 @@ hold off;
 
 p1 = "Separate from the vase.";
 theta1 = Interpreter(p1,theta0,d)
+% theta1 should be [0.2; 0.4].
 
 %% Trial 2 (tau=1)
 spec2 = Spec(A,B,Q,R,P,NP,environment,theta1,umin,umax);
@@ -89,6 +90,7 @@ hold off;
 %% Trial 2 -> Trial 3
 p2 = "You don't have to be so careful about the toy.";
 theta2 = Interpreter(p2,theta1,d)
+% theta2 should be [0.2; 0.8].
 
 %% Trial 3 (tau=2)
 spec3 = Spec(A,B,Q,R,P,NP,environment,theta2,umin,umax);
