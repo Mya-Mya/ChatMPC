@@ -15,14 +15,14 @@ environment_B = Environment("B",[0. -10. 0. 0.]',[ ...
 
 %% Select Environment
 
-% !! STOP !!
-% PLEASE EXECUTE COMMAND TO CREATE VARIABLE `environment`
+disp("!! STOP !!")
+disp("PLEASE EXECUTE COMMAND TO CREATE VARIABLE `environment`")
 
-% When you want to use the environment A, execute
-% >> environment = environment_A
-% When you want to use the environment B, execute
-% >> environment = environment_B
-% Or, you can create a new Environment.
+disp("When you want to use the environment A, execute")
+disp(">> environment = environment_A")
+disp("When you want to use the environment B, execute")
+disp(">> environment = environment_B")
+disp("Or, you can set a new Environment.")
 
 %% Setup Plant & MPC Controller
 DELTAT = 0.2;
