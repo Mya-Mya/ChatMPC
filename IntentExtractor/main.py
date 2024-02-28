@@ -83,7 +83,7 @@ parser.add_argument("--sbert_path", type=Path, required=True,
                     help="Path to the Sentence BERT model.")
 args = parser.parse_args()
 sbert_path = args.sbert_path
-sentencebert = SentenceTransformer(sbert_path)
+sentencebert = SentenceTransformer(str(sbert_path))
 
 
 # -----------------------------
